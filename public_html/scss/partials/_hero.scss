@@ -1,0 +1,21 @@
+
+
+.hero {
+     padding: 133px 0;
+     background-position: right center;
+     background-size: auto 100%;
+     background-repeat: no-repeat;
+     
+     .hero-content {
+         width: 100%;
+         max-width: 475px;
+         background-color: rgba($white, 0.7);
+         padding: 20px;
+         .hero-title {
+             font-size: 5.1rem;
+             line-height: 6.4rem;
+         }
+     }
+     
+     
+}
