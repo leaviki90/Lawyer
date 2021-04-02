@@ -1,4 +1,9 @@
+$services-desc-color: #F5F5F5;
+$service-title-color: white;
 
+.services.bg-info {
+    padding: 78px 0;
+}
 .services-list{
     margin-bottom: 89px;
     .service-icon {
@@ -13,6 +18,27 @@
         font-size: 1.6rem;
         line-height: 2.2rem;
         letter-spacing: 1.14px;
+        .services.bg-info & {
+            color: $service-title-color;
+        }
+    }
+    .service-desc {
+        display: none;
+        .services.bg-info &{
+            display: block;
+            color: $services-desc-color;
+            height: 75px;
+            overflow: hidden;
+            padding-top: 2rem;
+        }
+    }
+    .read-more {
+        display: none;
+        .services.bg-info &{
+            display: inline-block;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
 
