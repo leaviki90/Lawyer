@@ -40,4 +40,25 @@ $linkedin-color: #596d87;
             font-weight: 500;
         }
     }//team-member-item
+}//team-members
+
+
+.single-team {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    @media(min-width: 768px){
+       margin-bottom: 80px; 
+    }
+    @media(min-width: 992px){
+       margin-bottom: 110px; 
+    }
+    @media(min-width: 1200px){
+       margin-bottom: 133px; 
+    }
+    .team-member-position {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        font-weight: 500; 
+        margin-bottom: 3.6rem;
+    }
 }
