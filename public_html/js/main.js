@@ -50,21 +50,6 @@ $(document).ready(function(){
                         required: true,
                         email: true
                     },
-                    password: {
-                        required: true,
-                        minlength: 6,
-                        checklower: true,
-                        checkupper: true,
-                        checkdigit: true
-                                //passwordCheck: true
-                    },
-                    re_password: {
-                        required: true,
-                        equalTo: '#password'
-                    },
-                    course: {
-                        required: true
-                    },
                     message: {
                         required: true,
                         maxlength: 255
@@ -80,23 +65,6 @@ $(document).ready(function(){
                     email: {
                         required: 'Email je obavezno polje',
                         email: 'Unesite validan email'
-                    },
-                    password: {
-                        required: 'Lozinka je obavezno polje',
-                        minlength: 'Lozinka mora imati min 6 karaktera',
-                        checklower: 'Malo slovo nema',
-                        checkupper: 'Veliko slovo nema',
-                        checkdigit: 'Broj nema',
-                        passwordCheck: 'Lozinka mora imate bar jedno veliko slovo, bar jedno malo slovo i bar jedan broj'
-                    },
-                    repassword: {
-                        required: ' Ponovi Lozinku je obavezno polje',
-                        minlength: 'Ponovi Lozinku mora imati min 6 karaktera',
-                        equalTo: 'Lozinke se ne poklapaju'
-
-                    },
-                    course: {
-                        required: 'Kurs je obavezno polje'
                     },
                     message: {
                         required: 'Poruka je obavezno polje',

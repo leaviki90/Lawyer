@@ -1,5 +1,5 @@
 $category-color: $primary;
-
+$info-hero-color: #586C88;
 .hero {
      padding: 133px 0;
      background-position: right center;
@@ -32,6 +32,14 @@ $category-color: $primary;
              }
          } //news-info
      } //hero-content
-     
+     .info-group {
+        span {
+            font-size: 2rem;
+            color: $info-hero-color;
+        }
+        a {
+           color: $info-hero-color; 
+        }
+    }
      
 } //hero

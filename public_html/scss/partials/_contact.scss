@@ -1,0 +1,14 @@
+
+.contact {
+    margin-bottom: 50px;
+    @media(min-width: 768px){
+       margin-bottom: 80px; 
+    }
+    @media(min-width: 992px){
+       margin-bottom: 110px; 
+    }
+    @media(min-width: 1200px){
+       margin-bottom: 128px; 
+    }
+}
+

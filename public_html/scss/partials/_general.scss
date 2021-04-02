@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-family: $headings-font;
 }
-
+.form-group {
+    margin-bottom: 2rem;
+}
 .section-title {
     font-size: 3.6rem;
     line-height: 6.4rem;
