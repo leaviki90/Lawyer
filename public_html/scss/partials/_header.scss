@@ -3,6 +3,12 @@ $toggler-bg: $primary;
 
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
     .navbar-brand {
         max-width: 100px;
     } //logo
