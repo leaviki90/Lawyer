@@ -27,3 +27,22 @@
     } //news-item
 }
 
+.single-news-content {
+    width: 100%;
+    max-width: 748px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    @media(min-width: 768px){
+        padding-bottom: 70px;
+    }
+    @media(min-width: 992px){
+        padding-bottom: 110px;
+    }
+    @media(min-width: 1200px){
+        padding-bottom: 140px;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+}
+

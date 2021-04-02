@@ -1,4 +1,4 @@
-
+$category-color: $primary;
 
 .hero {
      padding: 133px 0;
@@ -9,14 +9,29 @@
      
      .hero-content {
          width: 100%;
-         max-width: 475px;
+         max-width: 558px;
          background-color: rgba($white, 0.7);
          padding: 20px;
          .hero-title {
              font-size: 5.1rem;
              line-height: 6.4rem;
-         }
-     }
+         }//hero-title
+         .news-info {
+             .news-categories {
+                 a {
+                     text-transform: uppercase;
+                     color: $category-color;
+                 }
+             } //news-categories
+             span {
+                color: $category-color;
+                margin: 0 5px;
+             } //span
+             .news-date {
+                color: $category-color; 
+             }
+         } //news-info
+     } //hero-content
      
      
-}
+} //hero
