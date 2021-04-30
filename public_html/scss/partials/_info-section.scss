@@ -1,0 +1,14 @@
+$info-color: #586C88;
+
+.info-section {
+    padding: 75px 0 69px;
+    .info-group {
+        span {
+            color: $info-color;
+            font-size: 2rem;
+        }
+        a {
+            color: $info-color;
+        }
+    }
+}

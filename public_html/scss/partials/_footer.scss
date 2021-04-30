@@ -1,0 +1,23 @@
+$footer-color: #586C88;
+footer {
+    padding: 25px 0;
+    .copyright {
+        font-size: 1.2rem;
+        color: $footer-color;
+        a {
+            color: $footer-color;
+        }
+    } //copyright ends
+    .social {
+        a {
+            font-size: 2.3rem;
+            color: $footer-color;
+            margin: 0 16px;
+            transition: 0.3s linear;
+            &:hover {
+                color: darken($footer-color, 20%);
+            }
+        }
+    } //social
+}
+
