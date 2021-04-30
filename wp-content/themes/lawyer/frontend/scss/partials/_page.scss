@@ -1,0 +1,19 @@
+.page-content {
+    padding: 10px 0 50px;
+    @media(min-width: 768px){
+        padding: 70px 0 123px;
+    }
+    
+    .page-item {
+        h2 {
+            font-size: 3.6rem;
+            line-height: 4.6rem;
+            text-transform: capitalize;
+            margin-bottom: 2rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+}
