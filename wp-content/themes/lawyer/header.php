@@ -21,7 +21,7 @@
         <meta name="aplication-name" content="<?PHP bloginfo("name"); ?>">
         <link rel="icon" type="image/png" href="<?PHP echo get_template_directory_uri(); ?>/frontend/android-icon-192x192.png">
 
-        <link rel="icon" type="<?PHP echo get_template_directory_uri(); ?>/frontend/image/ico" href="favicon.ico">
+        <link rel="icon" type="image/ico" href="<?PHP echo get_template_directory_uri(); ?>/frontend/favicon.ico">
             
        <?PHP wp_head(); ?>
        
