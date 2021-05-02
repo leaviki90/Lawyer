@@ -9,8 +9,13 @@ header {
     width: 100%;
     background-color: white;
     z-index: 5;
-    .navbar-brand {
-        max-width: 100px;
+    .navbar-brand, .custom-logo-link {
+        max-width: 88px;
+        max-height: 28px;
+        display: block;
+        img {
+           max-height: 28px; 
+        }
     } //logo
     .navbar-toggler {
         border: none;

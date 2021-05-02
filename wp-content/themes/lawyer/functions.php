@@ -23,3 +23,22 @@ function lawyer_scripts(){
 
 add_action( 'wp_enqueue_scripts', 'lawyer_scripts' );
 
+//THEME SETUP
+
+function  lawyer_setup(){
+    add_theme_support( 'automatic-feed-links' );
+    load_theme_textdomain( 'lawyer', get_template_directory() . '/languages' );
+    add_theme_support( 'custom-logo', array(
+        'height'               => 28,
+        'width'                => 88,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'unlink-homepage-logo' => false, 
+    ) );
+    register_nav_menus(array(
+        "main-menu" => __("Main Menu", "lawyer"),
+        "social" => __("Social", "lawyer")
+    ));
+}
+
+add_action( 'after_setup_theme', 'lawyer_setup' );
