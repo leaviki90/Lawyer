@@ -32,41 +32,7 @@
         <header class="py-1 py-md-3 py-lg-6">
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container">
-                    <?PHP
-                    if (has_custom_logo()):
-                        the_custom_logo();
-                    else:
-                        ?>
-                        <a class="navbar-brand" href="<?PHP echo get_home_url(); ?>">
-                            <img src="<?PHP echo get_template_directory_uri(); ?>/frontend/img/logo.png" alt=""/>
-                        </a>
-                    <?PHP
-                    endif;
-                    ?>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="main-menu">
-<!--                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="team.html">Our Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="news.html">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>-->
+                   <?php get_template_part("template-parts/main-menu");  ?>
                     </div>
                 </div>
             </nav>

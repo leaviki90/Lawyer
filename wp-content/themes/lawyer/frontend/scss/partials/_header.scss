@@ -1,4 +1,5 @@
 $toggler-bg: $primary;
+$current-link-color: $primary;
 
 
 
@@ -33,6 +34,11 @@ header {
     
     .navbar-nav {
         background-color: #FFF;
+        li.current-menu-item {
+            a {
+                color: $current-link-color;
+            }
+        }
         li {
             @media(min-width: 768px){
                 margin-left: 30px;
