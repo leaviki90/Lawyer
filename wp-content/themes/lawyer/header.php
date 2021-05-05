@@ -32,8 +32,7 @@
         <header class="py-1 py-md-3 py-lg-6">
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container">
-                   <?php get_template_part("template-parts/main-menu");  ?>
-                    </div>
+                    <?php get_template_part("template-parts/main-menu"); ?>
                 </div>
             </nav>
         </header>
