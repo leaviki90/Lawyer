@@ -1,0 +1,41 @@
+$bg-link: #11284B;
+$color-link: #1A77CD;
+.custhom-pagination {
+    margin-bottom: 10px;
+    a {
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        background-color: $bg-link;
+        color: $color-link;
+        font-size: 2rem;
+        padding: 20px 10px;
+        border-radius: 5px;
+    }
+}
+
+.navigation {
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .page-numbers {
+            width: 4rem;
+            height: 4rem;
+            line-height: 3.8rem;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            border-right: none;
+            &:last-child {
+                border-right: 1px solid #ccc;
+            }
+            &.current {
+                background: $primary;
+                color: white;
+            }
+        }
+    }
+}
+

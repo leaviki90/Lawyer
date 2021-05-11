@@ -41,6 +41,7 @@ function  lawyer_setup(){
         "social" => __("Social", "lawyer")
     ));
     add_theme_support( 'post-thumbnails' );
+    add_image_size("blog-thumb", 463, 326, true);
 }
 
 add_action( 'after_setup_theme', 'lawyer_setup' );

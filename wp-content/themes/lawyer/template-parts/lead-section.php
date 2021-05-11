@@ -1,15 +1,32 @@
+<?PHP 
+
+if(is_home() && get_option("page_for_posts")){ //blog page
+     $leadTitle = get_field("lead_subtitle", get_option("page_for_posts"));
+    $leadDescription = get_field("lead_description", get_option("page_for_posts"));
+    $leadImage = get_the_post_thumbnail_url(get_option("page_for_posts"));
+} else { //page
+    $leadTitle = get_field("lead_subtitle");
+    $leadDescription = get_field("lead_description");
+    $leadImage = get_the_post_thumbnail_url($post -> ID);
+}
+
+
+?>
+
 <!-- Hero starts -->
-            <section class="hero" style="background-image: url(<?php echo get_the_post_thumbnail_url($post -> ID); ?>)">
+            <section class="hero" style="background-image: url(<?php echo $leadImage; ?>)">
                 <div class="container">
                     <article class='hero-content animation slideRight' data-animation="slideRight">
-                        <h1 class='hero-title'><?php the_field("lead_subtitle"); ?></h1>
+                        <h1 class='hero-title'><?php echo $leadTitle; ?></h1>
                         <?PHP 
-                        if(!empty(get_field("lead_description"))){
+                        if(!empty($leadDescription)){
                             ?>
-                        <p class="hero-description mb-5">  <?php the_field("lead_description"); ?></p>
+                        <p class="hero-description mb-5">  <?php echo $leadDescription; ?></p>
                         <?php
                         }             
                         ?>
                     </article>
                 </div>
             </section><!-- Hero ends -->
+<?php 
+
