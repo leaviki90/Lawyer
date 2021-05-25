@@ -24,7 +24,7 @@ get_header();
             if ($services->have_posts()) {
                 ?>
                 <div class="services-list">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <?PHP
                         while ($services->have_posts()) {
                             $services->the_post();

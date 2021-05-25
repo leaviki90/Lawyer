@@ -54,7 +54,7 @@ get_header();
     
     ?>
      
-           <?PHP get_template_part("template-parts/info-section"); ?>
+           <?PHP get_template_part("template-parts/contact-data-flex"); ?>
 </main>
 <?php
 get_footer();
