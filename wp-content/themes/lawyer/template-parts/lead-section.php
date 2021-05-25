@@ -7,7 +7,7 @@ if(is_home() && get_option("page_for_posts")){ //blog page
 } else { //page
     $leadTitle = get_field("lead_subtitle");
     $leadDescription = get_field("lead_description");
-    $leadImage = get_the_post_thumbnail_url($post -> ID);
+    $leadImage = get_the_post_thumbnail_url(get_the_ID());
 }
 
 
@@ -24,6 +24,15 @@ if(is_home() && get_option("page_for_posts")){ //blog page
                         <p class="hero-description mb-5">  <?php echo $leadDescription; ?></p>
                         <?php
                         }             
+                        ?>
+                        <?php
+                      if(get_field("has_link")){
+                          ?>
+                      <a href='<?php the_field("lead_link")?>' class='btn btn-primary rounded-pill'><?php the_field("lead_link_text")?></a>
+                          
+                       <?PHP
+                       } 
+                        
                         ?>
                     </article>
                 </div>

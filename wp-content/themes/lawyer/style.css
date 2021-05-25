@@ -18,4 +18,47 @@ This theme, like WordPress, is licensed under the GPL.
 }
 .logged-in header {
     top: 32px;
-}   //ako se logged in nalazi u header onda
+}  
+
+.widget_pages ul{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+}
+.widget_recent_entries ul,
+.widget_pages ul{
+    list-style: none;
+    padding-left: 0;
+}
+.widget_recent_entries li:nth-of-type(even) a{
+    color: #1A77CD;
+}
+.widget_pages li:nth-of-type(odd) a {
+     color: #1A77CD;
+}
+.widget_calendar .calendar_wrap{
+    background-color: #1A77CD;
+    
+}
+.widget_calendar table {
+    width: 100%;
+    border: 2px solid black;
+    
+}
+.widget_calendar caption,
+nav.wp-calendar-nav{
+    color: #1E1E1E;
+    font-weight: bold;
+    background-color: white;
+}
+.widget_calendar td.pad {
+    background-color: #ffe8bc;
+    border: 1px solid black;
+}
+.widget-title {
+    text-align: center;
+}
+#today {
+    color: #1A77CD;
+    background-color: #ffe8bc;
+}

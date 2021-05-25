@@ -19,17 +19,7 @@ if (have_posts()):
      get_template_part("template-parts/content-news");     
     endwhile;
     ?>
-                    <div class="custhom-pagination">
-                        <div class="row">
-                            <div class="col-6">
-                                <?php previous_posts_link( 'Newer posts' ); ?>
-                            </div>
-                            <div class="col-6 text-end">
-                                <?php next_posts_link( 'Older posts' ); ?>
-                            </div>
-                            
-                        </div>
-                    </div>  
+                    <?php get_template_part("template-parts/list-pagination"); ?>  
                     <?php //the_posts_pagination(array(
                    //   'screen_reader_text' => " ",
                    //   "mid_size" => 2,

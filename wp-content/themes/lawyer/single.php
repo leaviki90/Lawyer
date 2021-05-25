@@ -15,7 +15,7 @@ if (have_posts()):
                 <div class="container">
                     <article class='hero-content animation slideRight' data-animation="slideRight">
                         <div class="news-info d-flex flex-wrap align-items-center mb-2">
-                            <div class="news-categories">
+                            <div class="news-categories mb-0">
                                 <?php the_category(" | "); ?>
                             </div>
                             <span> | </span>
@@ -58,6 +58,7 @@ if (have_posts()):
     
         <?php
     endwhile;
+     get_template_part("template-parts/single-pagination"); 
 endif;
 ?>
 <?PHP get_template_part("template-parts/info-section"); ?>
