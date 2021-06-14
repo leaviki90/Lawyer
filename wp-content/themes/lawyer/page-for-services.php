@@ -32,7 +32,8 @@ get_header();
                         }
                         ?>
                     </div>
-                    </section><!-- Services ends here -->
+                </div>
+        
                     <?PHP
                 } else {
                     get_template_part("template-parts/content-none");
@@ -40,6 +41,8 @@ get_header();
 
                 wp_reset_postdata();
                 ?>
+                 </div>
+                    </section><!-- Services ends here -->
                 </main>
 
-                <?php get_footer(); ?>
+                <?php get_footer(); 
